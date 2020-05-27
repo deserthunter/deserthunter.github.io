@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React | Note</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="Wesely Note">
+    <link rel="preload" href="/NotePro/assets/css/0.styles.84c2a560.css" as="style"><link rel="preload" href="/NotePro/assets/js/app.842cebdb.js" as="script"><link rel="preload" href="/NotePro/assets/js/2.51c83669.js" as="script"><link rel="preload" href="/NotePro/assets/js/16.281e02be.js" as="script"><link rel="prefetch" href="/NotePro/assets/js/10.74f417bc.js"><link rel="prefetch" href="/NotePro/assets/js/11.ede4817e.js"><link rel="prefetch" href="/NotePro/assets/js/12.8c45ba99.js"><link rel="prefetch" href="/NotePro/assets/js/13.e1e9951c.js"><link rel="prefetch" href="/NotePro/assets/js/14.dde976bf.js"><link rel="prefetch" href="/NotePro/assets/js/15.638eb3b0.js"><link rel="prefetch" href="/NotePro/assets/js/17.5483bdb8.js"><link rel="prefetch" href="/NotePro/assets/js/18.0fdae569.js"><link rel="prefetch" href="/NotePro/assets/js/19.9350b2bc.js"><link rel="prefetch" href="/NotePro/assets/js/3.3a265e35.js"><link rel="prefetch" href="/NotePro/assets/js/4.678c9681.js"><link rel="prefetch" href="/NotePro/assets/js/5.4f80a4a4.js"><link rel="prefetch" href="/NotePro/assets/js/6.9517a1cc.js"><link rel="prefetch" href="/NotePro/assets/js/7.4215e4a4.js"><link rel="prefetch" href="/NotePro/assets/js/8.b1ddaf20.js"><link rel="prefetch" href="/NotePro/assets/js/9.56e85243.js">
+    <link rel="stylesheet" href="/NotePro/assets/css/0.styles.84c2a560.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/NotePro/" class="home-link router-link-active"><!----> <span class="site-name">Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/NotePro/" class="nav-link">
+  主页
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/NotePro/" class="nav-link">
+  主页
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/NotePro/notes/React/react.html" aria-current="page" class="active sidebar-link">React笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#react" class="sidebar-link">React</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#状态组件" class="sidebar-link">- 状态组件</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#数据是向下流动的-单向数据流" class="sidebar-link">- 数据是向下流动的 (单向数据流)</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#受控组件-状态提升" class="sidebar-link">- 受控组件[状态提升]</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#组合-vs-继承" class="sidebar-link">- 组合 vs 继承</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#context" class="sidebar-link">- context *</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#refs" class="sidebar-link">- Refs</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#高阶组件" class="sidebar-link">- 高阶组件</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#portals" class="sidebar-link">- Portals  *</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#render-props" class="sidebar-link">- Render Props</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#严格模式" class="sidebar-link">- 严格模式 :</a></li></ul></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#redux" class="sidebar-link">Redux</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/React/react.html#redux-saga" class="sidebar-link">Redux-saga</a></li></ul></li><li><a href="/NotePro/notes/React/react-source.html" class="sidebar-link">React源码解析</a></li><li><a href="/NotePro/notes/Vue/vue.html" class="sidebar-link">Vue笔记</a></li><li><a href="/NotePro/notes/Vue/vue-source.html" class="sidebar-link">Vue源码解析</a></li><li><a href="/NotePro/notes/Flutter/" class="sidebar-link">Flutter笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NotePro/notes/Flutter/#flutter" class="sidebar-link">Flutter</a></li></ul></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Flutter源码解析</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Backbone源码解析</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/NotePro/notes/Browser/" class="sidebar-link">浏览器相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NotePro/notes/Browser/#browser" class="sidebar-link">Browser</a></li></ul></li><li><a href="/NotePro/notes/Measure/" class="sidebar-link">CI/DI</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NotePro/notes/Measure/#前端自动化分类" class="sidebar-link">前端自动化分类</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/Measure/#前端自动化实践" class="sidebar-link">前端自动化实践</a></li></ul></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>webpack相关</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/NotePro/notes/Other/" class="sidebar-link">其他</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NotePro/notes/Other/#本地npm库搭建-自己的服务器" class="sidebar-link">本地npm库搭建[自己的服务器]</a></li></ul></li><li><a href="/NotePro/notes/CSS/" class="sidebar-link">CSS/CSS3</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>组件化组件</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/NotePro/notes/Performance/" class="sidebar-link">性能调优</a></li><li><a href="/NotePro/notes/Ast/" class="sidebar-link">AST</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NotePro/notes/Ast/#ast树" class="sidebar-link">AST树</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/Ast/#javascript-编译" class="sidebar-link">javascript 编译</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/Ast/#javascript引擎" class="sidebar-link">JavaScript引擎</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/Ast/#webassemble" class="sidebar-link">WebAssemble</a></li><li class="sidebar-sub-header"><a href="/NotePro/notes/Ast/#llvm" class="sidebar-link">LLVM</a></li></ul></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>SOA/微服务</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python实战案例</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java实战案例</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Go笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Go实战案例</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="react"><a href="#react" class="header-anchor">#</a> React</h2> <h3 id="状态组件"><a href="#状态组件" class="header-anchor">#</a> - 状态组件</h3> <div class="language- extra-class"><pre><code> react 中的组件分为无状态组件和有状态组件两类。
+ &gt; 无状态组件
+ 无状态组件主要用来定义模板，接收来自父组件props传递过来的数据.无状态组件保持模板的纯粹性，以便于组件复用.
+ ```
+ var Header = (props) = (
+	    &lt;div&gt;{props.xxx}&lt;/div&gt;
+	);
+ ```
+ &gt; 有状态的组件(也叫容器组件)
+ 有状态组件用来定义交互逻辑和业务数据。通过state管理数据状态.
+ ```
+ class Home extends React.Component {
+	    constructor(props) {
+	        super(props);
+	        this.state = {
+	            nameOne: props.name,
+	            nameTwo: this.props.name 
+	        }
+	    };
+	    render() {
+	        return (
+	            &lt;div&gt;{this.state.nameOne}{this.state.nameTwo}&lt;/div&gt;
+	        )
+	    }
+	}
+ ```
+</code></pre></div><h3 id="数据是向下流动的-单向数据流"><a href="#数据是向下流动的-单向数据流" class="header-anchor">#</a> - 数据是向下流动的 (单向数据流)</h3> <div class="language- extra-class"><pre><code>	父组件或子组件都不能知道某个组件是有状态还是无状态，并且它们不应该关心某组件是被定义为一个函数还是一个类。这就是为什么状态通常被称为局部或封装。 除了拥有并设置它的组件外，其它组件不可访问。
+	任何状态始终由某些特定组件所有，并且从该状态导出的任何数据或 UI只能影响树中下方的组件（状态通常被认为是局部或封装在一个组件。除了拥有并设置它的组件外，其它组件不可访问）。组件间得知状态，也只能通过父子组件间的通信实现.
+	```
+	function FormattedDate(props) {
+	  return &lt;h2&gt;现在是 {props.date.toLocaleTimeString()}.&lt;/h2&gt;;
+	}
+	 
+	class Clock extends React.Component {
+	  constructor(props) {
+	    super(props);
+	    this.state = {date: new Date()};
+	  }
+	 
+	  componentDidMount() {
+	    this.timerID = setInterval(
+	      () =&gt; this.tick(),
+	      1000
+	    );
+	  }
+	 
+	  componentWillUnmount() {
+	    clearInterval(this.timerID);
+	  }
+	 
+	  tick() {
+	    this.setState({
+	      date: new Date()
+	    });
+	  }
+	 
+	  render() {
+	    return (
+	      &lt;div&gt;
+	        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+	        &lt;FormattedDate date={this.state.date} /&gt;
+	      &lt;/div&gt;
+	    );
+	  }
+	}
+	 
+	ReactDOM.render(
+	  &lt;Clock /&gt;,
+	  document.getElementById('example')
+	);
+	```
+</code></pre></div><h3 id="受控组件-状态提升"><a href="#受控组件-状态提升" class="header-anchor">#</a> - 受控组件[状态提升]</h3> <div class="language- extra-class"><pre><code>	&gt; 受控组件
+	值由React控制的输入表单元素称为“受控组件”。
+	受控组件有两个特点：1. 设置value值，value由state控制，2. value值一般在onChange事件中通过setState进行修改
+	&gt; 非受控组件
+	任何时候都不需要改变组件的value值，这时候可以使用非受控组件
+</code></pre></div><h3 id="组合-vs-继承"><a href="#组合-vs-继承" class="header-anchor">#</a> - 组合 vs 继承</h3> <div class="language- extra-class"><pre><code>	&gt; 组合
+	有点类似vue的插槽。
+	```
+	function SplitPane(props) {
+	  return (
+	    &lt;div className=&quot;SplitPane&quot;&gt;
+	      &lt;div className=&quot;SplitPane-left&quot;&gt;
+	        {props.left}
+	      &lt;/div&gt;
+	      &lt;div className=&quot;SplitPane-right&quot;&gt;
+	        {props.right}
+	      &lt;/div&gt;
+	    &lt;/div&gt;
+	  );
+	}
+
+	function App() {
+	  return (
+	    &lt;SplitPane
+	      left={
+	        &lt;Contacts /&gt;
+	      }
+	      right={
+	        &lt;Chat /&gt;
+	      } /&gt;
+	  );
+	ReactDOM.render(&lt;Slot&gt;测试简单插槽&lt;/Slot&gt;,document.getElementById('root'))
+	```
+	&gt; 继承
+	Props 和组合为你提供了清晰而安全地定制组件外观和行为的灵活方式。
+	注意：目前并没有发现需要使用继承的地方
+</code></pre></div><h3 id="context"><a href="#context" class="header-anchor">#</a> - context *</h3> <div class="language- extra-class"><pre><code>	JS中context指的是函数的执行上下文，函数被调用时，this指向谁，谁就是当前的执行上下文；
+	react中的context是:
+	Context 通过组件树提供了一个传递数据的方法，从而避免了在每一个层级手动的传递 props 属性. 也就是说可以使用context实现跨层级进行数据传递。
+	context api给出三个概念：React.createContext()、Provider、Consumer。
+	注意：值得一提的是每当Provider的值发生改变时, 作为Provider后代的所有Consumers都会重新渲染。
+	类似vue 的provider 和 inject
+</code></pre></div><h3 id="refs"><a href="#refs" class="header-anchor">#</a> - Refs</h3> <div class="language- extra-class"><pre><code>	react中，可以使用refs来访问dom，或者在render中创建react对象.
+	使用refs的方式有两种，一种是使用React.createRef() API，另一种是使用 回调形式的refs(eact 将在组件挂载时，会调用 ref 回调函数并传入 DOM 元素，当卸载时调用它并传入 null。在 componentDidMount 或 componentDidUpdate 触发前，React 会保证 refs 一定是最新的).
+	```
+	import React, { Component } from 'react'
+	export default class App extends React.Component {
+	  constructor(props) {
+	    super(props);
+	    // 创建一个 ref 来存储 textInput 的 DOM 元素
+	    this.textInput = React.createRef();
+	    this.focusTextInput = this.focusTextInput.bind(this);
+	  }
+
+	  focusTextInput() {
+	    // 直接使用原生 API 使 text 输入框获得焦点
+	    // 注意：我们通过 &quot;current&quot; 来访问 DOM 节点
+	    this.textInput.current.focus();
+	    console.log(this.textInput.current);//这边输出input的dom对象
+	  }
+
+	  render() {
+	    // 告诉 React 我们想把 &lt;input&gt; ref 关联到
+	    // 构造器里创建的 `textInput` 上
+	    return (
+	      &lt;div&gt;
+	        &lt;input
+	          type=&quot;text&quot;
+	          ref={this.textInput} /&gt;
+
+	        &lt;input
+	          type=&quot;button&quot;
+	          value=&quot;点击我获取焦点&quot;
+	          onClick={this.focusTextInput}
+	        /&gt;
+	      &lt;/div&gt;
+	    );
+	   }
+	 }
+	```
+	```
+	import React, { Component } from 'react'
+	export default class App extends React.Component {
+	  constructor(props) {
+	    super(props);
+	    // 创建一个 ref 来存储 textInput 的 DOM 元素
+	    this.textInput = null;
+	    this.setTextInputRef = element =&gt; {
+	      this.textInput = element;
+	    };
+	    this.focusTextInput = () =&gt; {
+	      // 使用原生 DOM API 使 text 输入框获得焦点
+	      if (this.textInput) this.textInput.focus();
+	    };
+	  }
+
+	  componentDidMount() {
+	    // 组件挂载后，让文本框自动获得焦点
+	    this.focusTextInput();
+	  }
+
+	  render() {
+	    // 使用 `ref` 的回调函数将 text 输入框 DOM 节点的引用存储到 React
+	    // 实例上（比如 this.textInput）
+	    return (
+	      &lt;div&gt;
+	        &lt;input
+	          type=&quot;text&quot;
+	          ref={this.setTextInputRef}
+	        /&gt;
+	        &lt;input
+	          type=&quot;button&quot;
+	          value=&quot;点击我获取焦点&quot;
+	          onClick={this.focusTextInput}
+	        /&gt;
+	      &lt;/div&gt;
+	    );
+	  }
+	}
+	```
+</code></pre></div><h3 id="高阶组件"><a href="#高阶组件" class="header-anchor">#</a> - 高阶组件</h3> <blockquote><p>封装其他组件返回 匿名class，render禁用hoc
+高阶组件接收React组件作为参数，并且返回一个新的React组件。高阶组件本质上也是一个函数，并不是一个组件，这一点一定不要弄错。</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>	import React, { Component } from 'react'
+  function withPersistentData(WrappedComponent) {
+    return class extends Component {
+      componentWillMount() {
+        let data = localStorage.getItem('data');
+          this.setState({data});
+      }
+      render() {
+        // 通过{...this.props} 把传递给当前组件的属性继续传递给被包装的组件WrappedComponent
+        return &lt;WrappedComponent data={this.state.data} {...this.props} /&gt;
+      }
+    }
+  }
+
+  class MyComponent2 extends Component {  
+    render() {
+      return &lt;div&gt;{this.props.data}&lt;/div&gt;
+    }
+  }
+  const MyComponentWithPersistentData = withPersistentData(MyComponent2)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="portals"><a href="#portals" class="header-anchor">#</a> - Portals  *</h3> <div class="language- extra-class"><pre><code>使得组件可以脱离父组件层级挂载在DOM树的任何位置,但是事件冒泡可以传递到父组件.
+使得组件可以脱离父组件层级挂载在DOM树的任何位置
+```
+const appRoot = document.getElementById('app-root');
+const modalRoot = document.getElementById('modal-root');
+
+class Modal extends React.Component {
+  constructor(props) {
+    super(props);
+    this.el = document.createElement('div');
+  }
+
+  componentDidMount() {
+    modalRoot.appendChild(this.el);
+  }
+
+  componentWillUnmount() {
+    modalRoot.removeChild(this.el);
+  }
+
+  render() {
+    return ReactDOM.createPortal(
+      this.props.children,
+      this.el,
+    );
+  }
+}
+
+class Parent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {clicks: 0};
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    // This will fire when the button in Child is clicked,
+    // updating Parent's state, even though button
+    // is not direct descendant in the DOM.
+    this.setState(prevState =&gt; ({
+      clicks: prevState.clicks + 1
+    }));
+  }
+
+  render() {
+    return (
+      &lt;div onClick={this.handleClick}&gt;
+        &lt;p&gt;Number of clicks: {this.state.clicks}&lt;/p&gt;
+        &lt;p&gt;
+          Open up the browser DevTools
+          to observe that the button
+          is not a child of the div
+          with the onClick handler.
+        &lt;/p&gt;
+        &lt;Modal&gt;
+          &lt;Child /&gt;
+        &lt;/Modal&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+function Child() {
+  // The click event on this button will bubble up to parent,
+  // because there is no 'onClick' attribute defined
+  return (
+    &lt;div className=&quot;modal&quot;&gt;
+      &lt;button&gt;Click&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+ReactDOM.render(&lt;Parent /&gt;, appRoot);
+```
+</code></pre></div><h3 id="render-props"><a href="#render-props" class="header-anchor">#</a> - Render Props</h3> <blockquote><p>共享state</p></blockquote> <h3 id="严格模式"><a href="#严格模式" class="header-anchor">#</a> - 严格模式 :</h3> <blockquote><p>StrictMode</p></blockquote> <h2 id="redux"><a href="#redux" class="header-anchor">#</a> Redux</h2> <blockquote><p>http://cn.redux.js.org</p></blockquote> <h2 id="redux-saga"><a href="#redux-saga" class="header-anchor">#</a> Redux-saga</h2> <blockquote><p>https://redux-saga-in-chinese.js.org/
+Redux-saga 使用步骤</p></blockquote> <ol><li>定义action. eg:</li></ol> <div class="language- extra-class"><pre><code>```
+import * as types from '../constants'
+export const getActionTopicMedias = (text) =&gt;{
+  return {type:types.topic_list,topiclist:text||[]}
+} 
+
+export const actionTopicMeidasSuccess =  (text) =&gt; {
+  return {type:types.topic_list_success,topiclist:text||[]};
+}
+```
+</code></pre></div><ol start="2"><li>定义reducer. eg:</li></ol> <div class="language- extra-class"><pre><code>```
+import { combineReducers } from &quot;redux&quot;;
+export function getMediaList(state = {medialist:[],topiclist:[]},action){
+  return {
+    ...state,
+    ...action
+  }
+}
+```
+</code></pre></div><ol start="3"><li>定义 sagas. eg:</li></ol> <div class="language- extra-class"><pre><code>```
+import {put,takeEvery,call,all,fork} from 'redux-saga/effects'
+import {getSliderMedias,getTopicList,getMovieDetail,getMovieInterCommond,getMovieTopic}  from '../../api'
+import * as types from '../constants'
+import * as actions from '../action'
+
+function* watchRequestMeidaList () {
+  yield takeEvery(types.media_list, getMiddleMediaList)
+}
+
+function* getMiddleMediaList(){
+  const result = yield call(getSliderMedias);
+  if(!result.data.code){
+    yield put(actions.actionSliderMeidasSuccess(result.data.data||[]))
+  }
+}
+
+function* rootSaga(){
+    yield all([fork(watchRequestMeidaList)])
+}
+
+export default rootSaga;
+```
+</code></pre></div><ol start="4"><li>链接saga 和 reducer</li></ol> <div class="language- extra-class"><pre><code>```
+import {createStore,applyMiddleware,compose} from 'redux';
+import rootReducer from './reducers';
+
+import createSagaMiddleware from 'redux-saga'
+import rootSaga from './sagas/'
+
+export  function configureStoreSaga(preloadState) {
+  const sagaMiddleware = createSagaMiddleware();
+  const store = createStore(rootReducer,applyMiddleware(sagaMiddleware));
+  sagaMiddleware.run(rootSaga);
+  return store;
+}
+```
+</code></pre></div><ol start="5"><li>组件绑定 状态</li></ol> <div class="language- extra-class"><pre><code>```
+class MovieList extends Component {
+  constructor(props){
+    super(props);
+    let {medialist, topiclist} = this.props
+    if(medialist &amp;&amp; !medialist.length){
+      this.props.setMediaList();
+    }
+    if(topiclist &amp;&amp; !topiclist.length){
+      this.props.setTopicList();
+    }
+  }
+  doneClick = () =&gt; {
+    console.log(this.props);
+  }
+  render(){
+    let {medialist, topiclist} = this.props;
+    let swiperlist = [];
+    medialist.forEach(item =&gt; {
+      if(!item.ad){
+        swiperlist.push({source:item.pic2,title:item.name});
+      }
+    });
+    return (
+      &lt;div&gt;
+        &lt;Mslider sources={swiperlist} interval={3000} number={swiperlist.length} activeIndex={0}&gt;
+        &lt;/Mslider&gt;
+        &lt;Mtopic sources={topiclist}&gt;&lt;/Mtopic&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default connect((state) =&gt; {
+  return state.getMediaList
+},(dispatch) =&gt; {
+  return {
+    setMediaList: (text) =&gt; dispatch(getActionSliderMedias(text)),
+    setTopicList: (text) =&gt; dispatch(getActionTopicMedias(text))
+  }
+})(MovieList)
+```	</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/NotePro/notes/React/react-source.html">
+        React源码解析
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/NotePro/assets/js/app.842cebdb.js" defer></script><script src="/NotePro/assets/js/2.51c83669.js" defer></script><script src="/NotePro/assets/js/16.281e02be.js" defer></script>
+  </body>
+</html>
